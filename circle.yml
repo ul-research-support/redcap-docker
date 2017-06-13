@@ -12,7 +12,7 @@ dependencies:
     - sudo apt-get install virtualbox
     - sudo apt-get -y install linux-headers-$(uname -r)
     - sudo apt-get -y install virtualbox-dkms
-    - sudo modprobe vboxdrv
+    - sudo dpkg-reconfigure virtualbox-*
 test:
   pre:
     - vagrant up --provider=virtualbox
