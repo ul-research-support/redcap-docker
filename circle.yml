@@ -1,0 +1,5 @@
+test:
+  pre:
+    - vagrant up
+  post:
+    - vagrant destroy --force
