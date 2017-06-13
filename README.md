@@ -3,6 +3,8 @@ Vagrant virtualization software builds a Docker container on a VM to run REDCap.
 
 ##### *Note: Because of REDCap's licensing policies, the Docker container cannot be uploaded to Docker Hub. Thus, a Vagrant VM will construct a container for you to use with a REDCap installation provided by the user.*
 
+##### *Note: Ignore the circle.yml file, as that is for Continuous Integration testing purposes by the developer.*
+
 ### Installation Instructions
 
 1. Download the REDCap-Docker master file and extract it on to your computer.
