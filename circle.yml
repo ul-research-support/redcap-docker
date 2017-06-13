@@ -12,8 +12,6 @@ dependencies:
     - sudo apt-get -y update
     - sudo apt-get -y install linux-headers-$(uname -r)
     - sudo apt-get install virtualbox
-    - sudo apt-get -y install virtualbox-dkms
-    - sudo dpkg-reconfigure virtualbox-5.1.22
 test:
   pre:
     - vagrant up --provider=virtualbox
