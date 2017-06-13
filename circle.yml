@@ -6,8 +6,12 @@ dependencies:
     - wget https://releases.hashicorp.com/vagrant/1.9.5/vagrant_1.9.5_x86_64.deb
     - sudo dpkg -i vagrant_1.9.5_x86_64.deb
     - vagrant plugin install vagrant-vbguest
+    - sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
+    - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+    - sudo apt-get update
+    - sudo apt-get install virtualbox
 test:
   pre:
-    - vagrant up
+    - vagrant up --provider=virtualbox
   post:
     - vagrant destroy --force
