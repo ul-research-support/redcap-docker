@@ -3,6 +3,7 @@ dependencies:
     - vagrant
     - ~/.vagrant.d
   pre:
+    - sudo apt-get -y install linux-headers-$(uname -r)
     - wget https://releases.hashicorp.com/vagrant/1.9.5/vagrant_1.9.5_x86_64.deb
     - sudo dpkg -i vagrant_1.9.5_x86_64.deb
     - vagrant plugin install vagrant-vbguest
@@ -10,7 +11,6 @@ dependencies:
     - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
     - sudo apt-get -y update
     - sudo apt-get install virtualbox
-    - sudo apt-get -y install linux-headers-$(uname -r)
     - sudo apt-get -y install virtualbox-dkms
     - sudo dpkg-reconfigure virtualbox-5.1.22
 test:
