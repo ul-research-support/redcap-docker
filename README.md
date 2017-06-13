@@ -7,7 +7,7 @@ Vagrant virtualization software builds a Docker container on a VM to run REDCap.
 
 1. Download the REDCap-Docker master file and extract it on to your computer.
 
-2. Move your REDCap installation folder inside of the newly-extracted redcap-docker folder.
+2. Move your REDCap installation zip folder inside of the newly-extracted redcap-docker folder.
 
 3. Navigate to the directory through your terminal or command prompt and run `vagrant up`.
 
