@@ -17,6 +17,7 @@ dependencies:
     - sudo apt-get update
     - sudo dpkg-reconfigure virtualbox-dkms
     - sudo dpkg-reconfigure virtualbox
+    - dmesg
 test:
   pre:
     - vagrant up --provider=virtualbox
