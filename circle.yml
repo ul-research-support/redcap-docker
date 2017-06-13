@@ -11,8 +11,8 @@ dependencies:
     - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
     - sudo apt-get -y update
     - sudo apt-get -y install linux-headers-$(uname -r)
-    - sudo apt-get install virtualbox
     - sudo apt-get install linux-headers-generic
+    - sudo apt-get install virtualbox
     - sudo apt-get install virtualbox-dkms
 test:
   pre:
