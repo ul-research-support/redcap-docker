@@ -1,3 +1,11 @@
+dependencies:
+  cache_directories:
+    - vagrant
+    - ~/.vagrant.d
+  pre:
+    - wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.9.5_x86_64.deb
+    - sudo dpkg -i vagrant_1.9.5_x86_64.deb
+    - vagrant plugin install vagrant-vbguest
 test:
   pre:
     - vagrant up
