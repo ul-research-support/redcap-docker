@@ -7,7 +7,7 @@ MAINTAINER cmsinc04
 #Set working directory to /
 WORKDIR /
 
-#Copy the current directory conetnes into the container at /
+#Copy the current directory contents into the container at /
 ADD . /
 
 #Install Puppet to run manifest
